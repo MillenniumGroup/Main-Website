@@ -1,6 +1,8 @@
+/*Begin Styling for Hero Section*/
 .hero-container {
   height: 607px;
   background: url("../assets/images/pexels-artem-podrez-6585028.jpg") no-repeat center;
+  background-attachment: fixed;
   background-size: cover;
   position: relative;
 }
@@ -35,6 +37,7 @@
   background-color: rgb(204, 157, 101);
   width: 100px;
   padding: 8px 13px;
+  border: 1px solid transparent;
   transition: background-color 0.20s,
               border 0.20s,
               color 0.20s;
@@ -45,3 +48,7 @@
   border: 1px solid rgb(204, 157, 101);
   color: rgb(204, 157, 101);
 }
+
+/*End Styling for Hero Section*/
+
+/*Begin styling for Sub sections*/
