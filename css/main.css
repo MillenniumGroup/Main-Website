@@ -1,0 +1,47 @@
+.hero-container {
+  height: 607px;
+  background: url("../assets/images/pexels-artem-podrez-6585028.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+.hero-heading {
+  color: white;
+  font-family: Zodiak, sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.hero-description {
+  color: white;
+  font-family: Satoshi, sans-serif;
+  font-size: 32px;
+  margin-bottom: 26px;
+}
+
+.hero-learn-more {
+  color: white;
+  font-family: Satoshi, sans-serif;
+  font-size: 20px;
+  background-color: rgb(204, 157, 101);
+  width: 100px;
+  padding: 8px 13px;
+  transition: background-color 0.20s,
+              border 0.20s,
+              color 0.20s;
+}
+
+.hero-learn-more:hover {
+  background-color: transparent;
+  border: 1px solid rgb(204, 157, 101);
+  color: rgb(204, 157, 101);
+}
