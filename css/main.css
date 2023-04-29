@@ -52,3 +52,172 @@
 /*End Styling for Hero Section*/
 
 /*Begin styling for Sub sections*/
+.mini-section {
+  position: relative;
+}
+
+.mini-about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  right: 50px;
+  
+}
+
+.mini-about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+}
+
+.mini-about-picture {
+  width: 620px;
+}
+
+.mini-about-picture img {
+  width: 100%;
+  height: 732px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.headliner {
+  font-family: Satoshi,sans-serif;
+  font-size: 13px;
+  line-height: 140%;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(56, 61, 71);
+  margin-bottom: 10px;
+}
+
+.mini-about-heading {
+  font-family: Zodiak, sans-serif;
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 501;
+  color: rgb(204, 157, 101);
+  margin-bottom: 20px;
+}
+
+.mini-about-heading span {
+  font-style: italic;
+  font-weight: 401;
+}
+
+.mini-about-text {
+  width: 572px;
+  margin-bottom: -20px;
+}
+
+.mini-about-description {
+  font-family: Satoshi, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(56, 61, 71);
+  line-height: 170%;
+  letter-spacing: 0.5px;
+}
+
+.mini-about-description br {
+  margin-bottom: 30px;
+}
+
+.mini-about-learn-more {
+  margin-top: 40px;
+}
+
+.mini-about-learn-more a {
+  color: white;
+  font-family: Satoshi, sans-serif;
+  font-size: 20px;
+  background-color: rgb(56, 61, 71);
+  width: 100px;
+  padding: 8px 13px;
+  border: 1px solid transparent;
+  transition: background-color 0.20s,
+              border 0.20s,
+              color 0.20s;
+}
+
+.mini-about-learn-more a:hover {
+  background-color: transparent;
+  border: 1px solid rgb(56, 61, 71);
+  color: rgb(56, 61, 71);
+}
+
+.mini-philosophy-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.mini-philosophy-text {
+  width: 572px;
+}
+
+.mini-philosophy-heading {
+  font-family: Zodiak, sans-serif;
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 501;
+  color: rgb(204, 157, 101);
+  margin-bottom: 20px;
+}
+
+.mini-philosophy-heading span {
+  font-style: italic;
+  font-weight: 401;
+}
+
+.mini-philosophy-description {
+  font-family: Satoshi, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(56, 61, 71);
+  line-height: 170%;
+  letter-spacing: 0.5px;
+}
+
+.mini-philosophy-description br {
+  margin-bottom: 30px;
+}
+
+.mini-philosophy-learn-more {
+  margin-top: 50px;
+}
+
+.mini-philosophy-learn-more a{
+  color: white;
+  font-family: Satoshi, sans-serif;
+  font-size: 20px;
+  background-color: rgb(56, 61, 71);
+  width: 100px;
+  padding: 8px 13px;
+  border: 1px solid transparent;
+  transition: background-color 0.20s,
+              border 0.20s,
+              color 0.20s;
+}
+
+.mini-philosophy-learn-more a:hover {
+  background-color: transparent;
+  border: 1px solid rgb(56, 61, 71);
+  color: rgb(56, 61, 71);
+}
+
+
+.mini-philosophy-picture {
+  width: 620px;
+}
+
+.mini-philosophy-picture img {
+  width: 100%;
+  height: 732px;
+  object-fit: cover;
+  object-position: center;
+}
