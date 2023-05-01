@@ -9,6 +9,7 @@ body {
   background-image: url("../assets/images/body\ background.png");
   background-position: 0 0;
   background-size: 110px 110px;
+  overflow-x: hidden;
 }
 
 a {

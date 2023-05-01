@@ -237,8 +237,8 @@
 }
 
 .message-image-container img {
-  width: 100%;
-  bottom: -30px;
+  width: 125%;
+  bottom: 0;
   position: absolute;
   left: 50px;
 }
@@ -271,4 +271,126 @@
   text-align: right;
   font-size: 18px;
   font-family: Zodiak, sans-serif;
+}
+
+.subsidaries-section {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  font-family: Zodiak, sans-serif;
+  color: rgb(56, 61, 71);
+}
+
+.subsidaries-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  margin-bottom: 100px;
+}
+
+.subsidaries-text {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  place-items: center;
+  transform: translate(-100%, 0) rotate(-90deg);
+  transform-origin: 100% 0;
+  text-align: left;
+}
+
+.subsidaries {
+  margin-top: 60px;
+  margin-left: -300px;
+  font-size: 48px;
+  font-weight: 501;
+}
+
+.subsidaries span {
+  font-weight: 401;
+  font-style: italic;
+}
+
+.subsidaries-infographic {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
+  height: 500px;
+  padding-left: 60px;
+  padding-right: 20px;
+  font-family: Zodiak, sans-serif;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.first-content,
+.second-content,
+.third-content,
+.fourth-content,
+.fifth-content,
+.sixth-content,
+.seventh-content,
+.eigth-content,
+.ninth-content {
+ min-width: 300px;
+ border-radius: 15px;
+}
+
+.first-content {
+  background-image: url("../assets/images/pexels-frans-van-heerden-1624695.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+}
+
+.second-content {
+  background-image: url("../assets/images/pexels-john-lee-6766628.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+ }
+
+.third-content {
+  background-image: url("../assets/images/pexels-volkan-vardar-3887985.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+}
+
+.fourth-content {
+  background-image: url("../assets/images/pexels-ron-lach-9853303.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+}
+
+.fifth-content {
+  background-image: url("../assets/images/pexels-deneen-lt-1058401.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+}
+
+.sixth-content {
+  background-image: url("../assets/images/pexels-karolina-grabowska-4386158.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+}
+
+.seventh-content {
+  background-image: url("../assets/images/pexels-athena-2582937.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+}
+
+.eigth-content {
+  background-image: url("../assets/images/pexels-wendy-wei-1540406.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+}
+
+.ninth-content {
+  background-image: url("../assets/images/pexels-pixabay-210538.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
 }
