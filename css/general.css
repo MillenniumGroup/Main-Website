@@ -3,10 +3,11 @@ p {
   margin-bottom: 0;
 }
 
+
 body {
   margin: 0;
   background-color: #fff;
-  background-image: url("../assets/images/body\ background.png");
+  background-image: url("../assets/images/body\ background.webp");
   background-position: 0 0;
   background-size: 110px 110px;
   overflow-x: hidden;
