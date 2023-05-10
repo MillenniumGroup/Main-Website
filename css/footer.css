@@ -1,0 +1,124 @@
+
+/*Begin footer section styling*/
+.footer-section {
+  background-image: linear-gradient(50deg, rgb(204, 157, 101), rgb(251, 206, 135));
+  padding: 100px 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  column-gap: 6rem;
+}
+
+.first-footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-company-logo {
+  margin-bottom: 3rem;
+}
+
+.footer-company-phone {
+  margin-bottom: 3rem;
+}
+
+.footer-company-phone,
+.footer-company-email {
+  display: inline-block;
+  font-family: Zodiak, sans-serif;
+  font-weight: 401;
+  font-size: 1.5rem;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.footer-company-phone a,
+.footer-company-email a {
+  color: white;
+}
+
+.second-footer-section {
+  display: grid;  
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+  padding-left: 100px;
+}
+
+.subsidaries-link-heading h2 {
+  font-family: Satoshi, sans-serif;
+  font-weight: 401;
+  font-size: 13px;
+  color: rgba(56, 61, 71, .7);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.subsidaries-link-list-item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.3rem;
+  font-size: 1rem;
+  font-family: Zodiak, sans-serif;
+  line-height: 150%;
+  font-weight: 401;
+  letter-spacing: .5px;
+}
+
+.subsidaries-link {
+  color: white;
+  font-style: italic;
+  transition: text-decoration 0.70s;
+}
+
+.subsidaries-link:hover {
+  text-decoration: underline;
+}
+
+.view-button {
+  text-decoration: none;
+}
+
+.view-button:hover {
+  text-decoration: none;
+}
+
+.subsidaries-view-button {
+  background-color: rgb(56, 61, 71);
+  color: white;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(56, 61, 71);
+  font-family: Satoshi, sans-serif;
+  font-weight: 401;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: background-color 0.20s,
+              border 0.20s,
+              color 0.20s;
+}
+
+.subsidaries-view-button:hover {
+  border: 1px solid rgb(56, 61, 71);
+  background-color: transparent;
+  color: rgb(56, 61, 71);
+  text-decoration: none;
+}
+
+.copyright-text {
+  margin-top: 150px;
+  color: white;
+  font-size: .8rem;
+  font-family: Satoshi, sans-serif;
+  font-size: 18px;
+  text-align: right;
+}
+
+.copyright-text a {
+  color: white;
+}

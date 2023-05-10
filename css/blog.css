@@ -1,0 +1,48 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.hero-text {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.hero-text-header {
+  font-family: Zodiak, sans-serif;
+  font-size: 10.5rem;
+  font-weight: 501;
+  color: rgb(204, 157, 101);
+}
+
+.news-ticker {
+  margin-top: 0;
+  background-color: rgb(56, 61, 71);
+  font-family: Satoshi, sans-serif;
+  color: white;
+}
+
+.news-ticker-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.news-ticker-header-container {
+  padding-right: 20px;
+}
+
+.news-ticker-header {
+  font-size: 20px;
+  font-weight: 601;
+}
+
+.marquee-container {
+  flex: 1;
+}
+
