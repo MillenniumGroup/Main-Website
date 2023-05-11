@@ -12,11 +12,93 @@
   margin-bottom: 0;
 }
 
+.hero-text-image {
+  width: 100%;
+  margin: 50px 0;
+}
+
+/*Begin email subscription form*/
+/*Begin email section styling*/
+
+.email-section {
+  padding: 4rem 4rem;
+}
+
+.email-subscription-box {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+}
+
+.email-subscription-box h2 {
+  margin: 0 0;
+  font-family: Zodiak, sans-serif;
+  font-weight: 501;
+  font-size: 3rem;
+  line-height: 120%;
+  color: rgb(204, 157, 101);
+}
+
+.email-subscription-box h2 span {
+  font-weight: 401;
+  font-style: italic;
+}
+
+.newsletter-form {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.newsletter-form-fill {
+  display: flex;
+  width: 100%;
+  box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+}
+
+.newsletter-email {
+  width: 300px;
+  min-height: 4rem;
+  padding-left: 1.25rem;
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  border-color: rgba(56, 61, 71, .5);
+  background-color: white;
+  font-family: Zodiak, sans-serif;
+  color: #082220;;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 401;
+  letter-spacing: 0;
+}
+
+.newsletter-email:focus-within {
+  outline: none;
+}
+
+.newsletter-submit {
+  border: 1px solid rgb(56, 61, 71);
+  color: #f2f6eb;
+  font-family: Satoshi, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(56, 61, 71);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
 .hero-text-header {
   font-family: Zodiak, sans-serif;
-  font-size: 10.5rem;
-  font-weight: 501;
+  font-size: 8.9rem;
+  font-weight: 601;
+  text-transform: uppercase;
   color: rgb(204, 157, 101);
+  margin-bottom: 100px;
 }
 
 .news-ticker {
@@ -31,6 +113,7 @@
   flex-direction: row;
   padding: 10px 20px;
   align-items: center;
+  margin-bottom: 150px;
 }
 
 .news-ticker-header-container {
@@ -46,3 +129,213 @@
   flex: 1;
 }
 
+.news-category-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.category-header {
+  font-family: Satoshi, sans-serif;
+  font-size: 1rem;
+  font-weight: 501;
+  text-transform: uppercase;
+  color: rgb(204, 157, 101);
+}
+
+.news-category-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.news-category {
+  border: 1px solid rgb(204, 157, 101);
+  padding: .5rem .75rem;
+  border-radius: 500px;
+  color: rgb(204, 157, 101);
+  text-transform: uppercase;
+  font-family: Satoshi, sans-serif;
+  font-size: .75rem;
+  line-height: 120%;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.news-category:hover {
+  background-color: rgb(204, 157, 101);
+  color: white;
+}
+
+.blog-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 0;
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
+
+.blog-content {
+  border: 1px solid rgb(56, 61, 71);
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 48px;
+  font-family: Satoshi, sans-serif;
+  background-color: white;
+  margin-right: -1px;
+}
+
+.blog-content-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-content-header-date {
+  font-size: .875rem;
+  color: rgb(204, 157, 101);
+}
+
+.blog-content-category-text {
+  border: 1px solid rgb(204, 157, 101);
+  padding: .5rem .75rem;
+  border-radius: 500px;
+  color: rgb(204, 157, 101);
+  text-transform: uppercase;
+  font-family: Satoshi, sans-serif;
+  font-size: .75rem;
+  line-height: 120%;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.blog-content-category-text:hover {
+  background-color: rgb(204, 157, 101);
+  color: white;
+}
+
+.blog-content-image {
+  overflow: hidden;
+}
+
+.blog-content-image img {
+  width: 100%;
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+.blog-content-image img:hover {
+  transform: translate3d(0px, 1.96448%, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+  transform-style: preserve-3d;
+}
+
+.blog-content-text {
+  margin-top: -10px;
+}
+
+.blog-content-text-header {
+  font-family: Satoshi, sans-serif;
+  color: rgb(204, 157, 101);
+  font-size: 1.6rem;
+  line-height: 120%;
+  font-weight: 701;
+  margin-bottom: 20px;
+}
+
+.blog-content-text-description {
+  font-family: Satoshi, sans-serif;
+  font-size: 16px;
+  line-height: 180%;
+  font-weight: 400;
+  color: rgb(56, 61, 71);
+  overflow: hidden;
+  text-overflow: clip;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.blog-goto-content {
+  margin-top: -25px;
+  margin-bottom: -25px;
+  color: white;
+}
+
+.blog-goto-content a {
+  display: inline-block;
+  background-color: rgb(204, 157, 101);
+  color: white;
+  padding: .5rem .75rem;
+  border: 1px solid rgb(204, 157, 101);
+  border-radius: .15rem;
+  transition:  0.2s;
+}
+
+.blog-goto-content a:hover {
+  background-color: white;
+  color: rgb(204, 157, 101);
+}
+
+.blog-content-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-content-author {
+  font-family: Satoshi, sans-serif;
+  font-size: .875rem;
+  line-height: 170%;
+  font-weight: 600;
+}
+
+.blog-content-author span {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.blog-content-read-time {
+  font-family: Satoshi, sans-serif;
+  font-size: .875rem;
+  line-height: 170%;
+  font-weight: 600;
+}
+
+.blog-content-read-time span {
+  font-weight: 400;
+}
+
+.blog-content-pagination {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.previous-pagination,
+.next-pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.previous-pagination p,
+.next-pagination p {
+  font-family: Satoshi, sans-serif;
+  font-weight: 601;
+  text-transform: uppercase;
+  font-size: 14px;
+}
