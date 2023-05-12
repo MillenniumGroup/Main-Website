@@ -5,10 +5,23 @@
   padding: 100px 50px;
 }
 
+@media (width < 731px) {
+  .footer-section {
+    padding: 100px 30px;
+  }
+}
+
 .footer-container {
   display: grid;
   grid-template-columns: 0.4fr 1fr;
   column-gap: 6rem;
+}
+
+@media (width < 991px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    column-gap: 10rem;
+  }
 }
 
 .first-footer-content {
@@ -18,12 +31,36 @@
   justify-content: space-between;
 }
 
+@media (width < 991px) {
+  .first-footer-content {
+    width: 250px;
+  }
+}
+
 .footer-company-logo {
   margin-bottom: 3rem;
+}
+@media (width < 991px) {
+  .footer-company-logo {
+    width: 400px;    
+  }
+}
+
+@media (width < 731px) {
+  .footer-company-logo {
+    width: 250px;
+  }
 }
 
 .footer-company-phone {
   margin-bottom: 3rem;
+}
+@media (width < 991px) {
+  .first-phone,
+  .second-phone,
+  .footer-company-email a p {
+    font-size: 20px;  
+  }
 }
 
 .footer-company-phone,
@@ -36,6 +73,13 @@
   letter-spacing: 0.5px;
 }
 
+@media (width < 991px) {
+  .footer-company-phone,
+  .footer-company-email {
+    display: initial;
+  }
+}
+
 .footer-company-phone a,
 .footer-company-email a {
   color: white;
@@ -46,6 +90,19 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1.5rem;
   padding-left: 100px;
+}
+
+@media (width < 991px) {
+  .second-footer-section {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+}
+
+@media (width < 550px) {
+  .second-footer-section {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .subsidaries-link-heading h2 {
@@ -67,6 +124,13 @@
   line-height: 150%;
   font-weight: 401;
   letter-spacing: .5px;
+}
+
+@media (width < 550px) {
+  .subsidaries-link-list:nth-child(3) {
+    grid-row-start: 1;
+    grid-column-start: 1;    
+  }
 }
 
 .subsidaries-link {
@@ -103,6 +167,12 @@
               color 0.20s;
 }
 
+@media (width < 731px) {
+  .subsidaries-view-button {
+    font-size: 14px;
+  }
+}
+
 .subsidaries-view-button:hover {
   border: 1px solid rgb(56, 61, 71);
   background-color: transparent;
@@ -117,6 +187,12 @@
   font-family: Satoshi, sans-serif;
   font-size: 18px;
   text-align: right;
+}
+
+@media (width < 500px) {
+  .copyright-text {
+    font-size: 14px;
+  }
 }
 
 .copyright-text a {

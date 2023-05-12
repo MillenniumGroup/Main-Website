@@ -32,6 +32,12 @@
   margin-right: 30px;
 }
 
+@media ( width < 912px ) {
+  .page-link {
+    display: none;
+ } 
+}
+
 .link,
 .contact-button {
   flex: 1;
