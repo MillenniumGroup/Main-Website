@@ -31,15 +31,6 @@
   color: rgb(204, 157, 101);
 }
 
-.news-events-header {
-  font-family: Zodiak, sans-serif;
-  font-size: 1.875rem;
-  line-height: 130%;
-  font-weight: 601;
-  text-transform: uppercase;
-  color: rgb(204, 157, 101);
-}
-
 .news-header-container {
   display: grid;
   grid-template-columns: 0.75fr 0.5fr;

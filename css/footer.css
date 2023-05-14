@@ -170,6 +170,13 @@
 @media (width < 731px) {
   .subsidaries-view-button {
     font-size: 14px;
+    padding: .5rem;
+  }
+}
+
+@media (width < 500px) {
+  .subsidaries-view-button {
+    font-size: 12px;
   }
 }
 
