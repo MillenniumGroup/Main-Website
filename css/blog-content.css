@@ -145,6 +145,11 @@
   align-items: start;
 }
 
+.post-single-content-info-container {
+  position: sticky;
+  top: 1rem;
+}
+
 .post-single-author-info {
   display: grid;
   grid-template-columns: 80px 1fr;
