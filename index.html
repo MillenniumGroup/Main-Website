@@ -14,8 +14,12 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/footer.css">
   <!-- End Stylesheets-->
+  <!-- Scripts-->
+  <script src="js/misc.js" defer></script>
+  <!-- End Scripts-->
   <!-- Import Fonts-->
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,42 +37,45 @@
   <script src="https://kit.fontawesome.com/8fb8a7e9fa.js" crossorigin="anonymous"></script>
   <!-- End Script CDNs-->
 </head>
-<body >
-  <!-- Web Header -->
-  <header class="header">
-    <!-- Main Logo-->
-    <div class="header-logo">
-      <a href="index.html">
-        <img class="website-logo" src="assets/svg/MG White Horizontal.svg" alt="Millennium Group">
+<!-- Web Header -->
+<header class="header">
+  <!-- Main Logo-->
+  <div class="header-logo">
+    <a href="index.html">
+      <img class="website-logo" src="assets/svg/MG White Horizontal.svg" alt="Millennium Group">
+    </a>
+  </div>
+  <!--Links Desktop View-->
+  <div class="page-link">
+      <a href="">
+        <p class="link">Our Subsidiaries</p>
+      </a>
+      <a href="">
+        <p class="link">About Us</p>
+      </a>
+      <a href="">
+        <p class="link">Initiatives</p>
+      </a>
+      <a href="">
+        <p class="link">Gallery</p>
+      </a>
+      <a href="blog.html">
+        <p class="link">News</p>
+      </a>
+    <div class="contact-us-desktop">
+      <a href="">
+        <p class="contact-button">
+          Get In Touch
+        </p>
       </a>
     </div>
-    <!--Links Desktop View-->
-    <div class="page-link">
-        <a href="">
-          <p class="link">Our Subsidiaries</p>
-        </a>
-        <a href="">
-          <p class="link">About Us</p>
-        </a>
-        <a href="">
-          <p class="link">Initiatives</p>
-        </a>
-        <a href="">
-          <p class="link">Gallery</p>
-        </a>
-        <a href="">
-          <p class="link">News</p>
-        </a>
-      <div class="contact-us-desktop">
-        <a href="">
-          <p class="contact-button">
-            Get In Touch
-          </p>
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- End Header-->
+  </div>
+</header>
+<!-- End Header-->
+<body >
+  <!-- Go to top button-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+  <!-- End Back to Top button--> 
   <!-- Body Start -->
   <main>
     <!-- Hero Section -->
@@ -140,6 +147,13 @@
       </div>
     </div>
     <!-- End Mini About Us-->
+    <!-- Begin Features-->
+    <div class="news-section-header">
+      <p class="section-subtitle">
+        Places we have been <span>Featured</span> 
+      </p>
+    </div>
+    <!-- End Features-->
     <!-- Begin Chairman's Message-->
     <div class="message-section">
       <div class="message-container">
@@ -315,7 +329,7 @@
             </div>
           </div>
         </div>
-        <a href="">
+        <a href="blog.html">
           <div class="all-news-link">
            &mdash; See All Articles
           </div>
@@ -420,7 +434,7 @@
                 <a href="" class="subsidaries-link">
                   <p>Initiatives</p>
                 </a>
-                <a href="" class="subsidaries-link">
+                <a href="blog.html" class="subsidaries-link">
                   <p>News</p>
                 </a>
               </div>
