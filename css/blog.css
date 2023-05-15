@@ -195,6 +195,8 @@
 
 .hero-blog-picture {
   margin-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 @media (width < 991px) {
@@ -562,6 +564,12 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 150px;
+}
+
+@media (width < 480px) {
+  .blog-content-pagination {
+    padding: 0 20px;
+  }
 }
 
 .previous-pagination,

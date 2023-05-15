@@ -1,0 +1,114 @@
+.hero-about-section {
+  position: relative;
+}
+
+.hero-about-video {
+  width: 100%;
+  max-height: 500px;
+  right: -100%;
+  bottom: -100%;
+  top: -100%;
+  left: -100%;
+  object-fit: cover;
+  z-index: -100;
+}
+
+.hero-about-text {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  color: rgb(204, 157, 101);
+  font-family: Zodiak, sans-serif;
+  font-size: 58px;
+  line-height: 180%;
+}
+
+@media (width < 991px) {
+  .hero-about-text {
+    font-size: 48px;
+  }
+}
+
+@media (width < 899px) {
+  .hero-about-text {
+    font-size: 38px;
+    top: 40%;
+  }
+}
+
+@media (width < 700px) {
+  .hero-about-text {
+    font-size: 32px;
+  }
+}
+
+@media (width < 480px) {
+  .hero-about-text {
+    font-size: 28px;
+    top: 25%;
+    left: 25%;
+  }
+}
+
+@media (width < 380px) {
+  .hero-about-text {
+    left: 19%;
+  }
+}
+
+.hero-copy-section {
+  background-color: rgb(204, 157, 101);
+  margin-top: -5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 8rem;
+}
+
+@media (width < 991px) {
+  .hero-copy-section {
+    padding: 5rem 3rem;
+  }
+}
+
+@media (width < 767px) {
+  .hero-copy-section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.hero-copy-header {
+  font-family: Satoshi, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 401;
+  line-height: 140%;
+}
+
+.hero-copy-text {
+  color: white;
+  font-family: Zodiak, sans-serif;
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 150%;
+  font-family: 401;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+@media (width < 991px) {
+  .hero-copy-text {
+    font-size: 2rem;
+  }
+}
+
+@media (width < 767px) {
+  .hero-copy-text {
+    font-size: 1.75rem;
+    line-height: 140%;
+  }
+}
