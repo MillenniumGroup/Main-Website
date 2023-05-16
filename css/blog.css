@@ -63,7 +63,6 @@
 
 .news-header {
   text-transform: uppercase;
-  font-family: Satoshi, sans-serif;
   line-height: 110%;
   font-weight: 601;
   font-size: 4.5rem;
@@ -101,7 +100,6 @@
 }
 
 .news-exrcept {
-  font-family: Satoshi, sans-serif;
   font-weight: 401;
   font-size: 1.25rem;
   line-height: 170%;
@@ -115,7 +113,6 @@
 }
 
 .news-info-section {
-  font-family: Satoshi, sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -157,7 +154,6 @@
 }
 
 .category-header {
-  font-family: Satoshi, sans-serif;
   font-size: 1rem;
   font-weight: 501;
   text-transform: uppercase;
@@ -178,7 +174,6 @@
   border-radius: 500px;
   color: rgb(204, 157, 101);
   text-transform: uppercase;
-  font-family: Satoshi, sans-serif;
   font-size: .75rem;
   line-height: 120%;
   text-decoration: none;
@@ -249,7 +244,6 @@
   grid-template-columns: .25fr .75fr;
   gap: 50px;
   padding: 48px;
-  font-family: Satoshi, sans-serif;
 }
 
 @media (width < 731px) {
@@ -290,7 +284,6 @@
   border-radius: 500px;
   color: rgb(204, 157, 101);
   text-transform: uppercase;
-  font-family: Satoshi, sans-serif;
   font-size: .75rem;
   line-height: 120%;
   text-decoration: none;
@@ -342,7 +335,6 @@
 }
 
 .blog-content-text-header {
-  font-family: Satoshi, sans-serif;
   color: rgb(204, 157, 101);
   font-size: 1.6rem;
   line-height: 120%;
@@ -357,7 +349,6 @@
 }
 
 .blog-content-text-description {
-  font-family: Satoshi, sans-serif;
   font-size: 16px;
   line-height: 180%;
   font-weight: 400;
@@ -432,7 +423,6 @@
 }
 
 .blog-content-author {
-  font-family: Satoshi, sans-serif;
   font-size: .875rem;
   line-height: 170%;
   font-weight: 600;
@@ -445,7 +435,6 @@
 
 .blog-content-date,
 .blog-content-read-time {
-  font-family: Satoshi, sans-serif;
   font-size: .875rem;
   line-height: 170%;
   font-weight: 600;
@@ -480,7 +469,6 @@
 }
 
 .sidebar-category-header {
-  font-family: Zodiak, sans-serif;
   font-weight: 701;
   text-transform: uppercase;
   color: rgb(204, 157, 101);
@@ -491,7 +479,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
-  font-family: Satoshi, sans-serif;
 }
 
 .sidebar-category {
@@ -517,7 +504,6 @@
 
 .sidebar-popular-posts-header {
   text-transform: uppercase;
-  font-family: Zodiak, sans-serif;
   color: rgb(204, 157, 101);
   line-height: 140%;
   margin-bottom: 0;
@@ -545,7 +531,6 @@
 .popular-post-author {
   font-size: .875rem;
   font-weight: 601;
-  font-family: Satoshi, sans-serif;
   line-height: 170%;
   color: white;
 }
@@ -581,7 +566,6 @@
 
 .previous-pagination p,
 .next-pagination p {
-  font-family: Satoshi, sans-serif;
   font-weight: 601;
   text-transform: uppercase;
   font-size: 14px;
@@ -609,7 +593,6 @@
 
 .email-subscription-box h2 {
   margin: 0 0;
-  font-family: Zodiak, sans-serif;
   font-weight: 501;
   font-size: 3rem;
   line-height: 120%;
@@ -690,7 +673,6 @@
   border-style: solid;
   border-color: rgba(56, 61, 71, .5);
   background-color: white;
-  font-family: Zodiak, sans-serif;
   color: #082220;;
   font-style: italic;
   font-size: 16px;
@@ -711,7 +693,6 @@
 .newsletter-submit {
   border: 1px solid rgb(56, 61, 71);
   color: #f2f6eb;
-  font-family: Satoshi, sans-serif;
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 110%;

@@ -40,7 +40,6 @@
 .hero-heading {
   flex: 1;
   color: white;
-  font-family: Zodiak, sans-serif;
   font-size: 80px;
   font-weight: 700;
 }
@@ -66,7 +65,6 @@
 .hero-description {
   flex: 1;
   color: white;
-  font-family: Satoshi, sans-serif;
   font-size: 32px;
   margin-bottom: 26px;
 }
@@ -92,8 +90,7 @@
 
 .hero-learn-more {
   color: white;
-  font-family: Satoshi, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   background-color: rgb(204, 157, 101);
   width: 100px;
   padding: 8px 13px;
@@ -195,7 +192,6 @@
 }
 
 .mini-about-heading {
-  font-family: Zodiak, sans-serif;
   font-size: 48px;
   line-height: 120%;
   font-weight: 501;
@@ -227,7 +223,6 @@
 }
 
 .mini-about-description {
-  font-family: Satoshi, sans-serif;
   font-size: 18px;
   font-weight: 300;
   color: rgb(56, 61, 71);
@@ -257,7 +252,6 @@
 
 .mini-about-learn-more a {
   color: white;
-  font-family: Satoshi, sans-serif;
   font-size: 20px;
   background-color: rgb(56, 61, 71);
   width: 100px;
@@ -301,7 +295,6 @@
 }
 
 .mini-philosophy-heading {
-  font-family: Zodiak, sans-serif;
   font-size: 48px;
   line-height: 120%;
   font-weight: 501;
@@ -321,7 +314,6 @@
 }
 
 .mini-philosophy-description {
-  font-family: Satoshi, sans-serif;
   font-size: 18px;
   font-weight: 300;
   color: rgb(56, 61, 71);
@@ -351,7 +343,6 @@
 
 .mini-philosophy-learn-more a{
   color: white;
-  font-family: Satoshi, sans-serif;
   font-size: 20px;
   background-color: rgb(56, 61, 71);
   width: 100px;
@@ -457,7 +448,6 @@
 
 .message-heading {
   font-size: 48px;
-  font-family: Zodiak, sans-serif;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -476,7 +466,6 @@
 
 .main-message {
   font-size: 24px;
-  font-family: Satoshi, sans-serif;
   margin-bottom: 30px;
 }
 
@@ -496,7 +485,6 @@
 .message-author {
   text-align: right;
   font-size: 18px;
-  font-family: Zodiak, sans-serif;
 }
 
 @media (width < 731px) {
@@ -509,7 +497,6 @@
 .subsidaries-section {
   margin-top: 150px;
   margin-bottom: 100px;
-  font-family: Zodiak, sans-serif;
   color: rgb(56, 61, 71);
 }
 
@@ -581,7 +568,6 @@
   height: 500px;
   padding-left: 60px;
   padding-right: 20px;
-  font-family: Zodiak, sans-serif;
   overflow-x: scroll;
   scrollbar-width: none;
 }
@@ -620,7 +606,6 @@
 
 .main-group {
   color: white;
-  font-family: Zodiak, sans-serif;
   font-size: 28px;
   font-style: italic;
   font-weight: 401;
@@ -634,7 +619,6 @@
 
 .subisidary {
   color: white;
-  font-family: Zodiak, sans-serif;
   font-size: 28px;
   font-weight: 501;
 }
@@ -762,20 +746,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Zodiak, sans-serif;
   color: rgb(56, 61, 71);
   margin-bottom: 3%;
 }
 
 .section-name {
-  font-family: Satoshi, sans-serif;
   font-size: 1em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .section-subtitle {
-  font-family: Zodiak, sans-serif;
   font-size: 3em;
   font-style: italic;
   font-weight: 401;
@@ -865,7 +846,6 @@
 }
 
 .news-section-content-item-textbox {
-  font-family: Satoshi, sans-serif;
   padding: 0 1.5rem;
 }
 
@@ -887,7 +867,6 @@
 }
 
 .news-section-content-item-heading {
-  font-family: Zodiak, sans-serif;
   font-size: 1.5rem;
   line-height: 130%;
   font-weight: 501;
@@ -919,7 +898,6 @@
   margin-bottom: 100px;
   background-color: rgb(56, 61, 71);
   color: #fff;
-  font-family: Satoshi, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   padding: 16px 20px;
@@ -953,7 +931,6 @@
   align-items: center;
   justify-content: center;
   color: white;
-  font-family: Zodiak, sans-serif;
   font-size: 48px;
 }
 
@@ -1007,7 +984,6 @@
 
 .gallery-cta-text a {
   font-size: 18px;
-  font-family: Satoshi, sans-serif;
 }
 
 @media (width < 731px) {
@@ -1063,7 +1039,6 @@
 
 .email-subscription-box h2 {
   margin: 0 0;
-  font-family: Zodiak, sans-serif;
   font-weight: 501;
   font-size: 3rem;
   line-height: 120%;
@@ -1144,7 +1119,6 @@
   border-style: solid;
   border-color: rgba(56, 61, 71, .5);
   background-color: white;
-  font-family: Zodiak, sans-serif;
   color: #082220;;
   font-style: italic;
   font-size: 16px;
@@ -1165,7 +1139,6 @@
 .newsletter-submit {
   border: 1px solid rgb(56, 61, 71);
   color: #f2f6eb;
-  font-family: Satoshi, sans-serif;
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 110%;

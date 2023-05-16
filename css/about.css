@@ -18,7 +18,6 @@
   top: 20%;
   left: 30%;
   color: rgb(204, 157, 101);
-  font-family: Zodiak, sans-serif;
   font-size: 58px;
   line-height: 180%;
 }
@@ -80,7 +79,6 @@
 }
 
 .hero-copy-header {
-  font-family: Satoshi, sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 13px;
@@ -91,7 +89,6 @@
 
 .hero-copy-text {
   color: white;
-  font-family: Zodiak, sans-serif;
   font-style: italic;
   font-size: 3rem;
   line-height: 150%;
