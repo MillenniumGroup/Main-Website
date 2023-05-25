@@ -57,6 +57,10 @@
   transition: all 0.5s;
 }
 
+.page-link-scrolled a p {
+  font-size: 16px;
+}
+
 .link:hover {
   color: #d8d8d8;
   text-decoration: underline;
