@@ -5,6 +5,7 @@
   justify-content: space-between;
   padding: 0 50px;
   margin: 30px 0;
+  padding-top: 130px;
 }
 
 @media (width < 768px) {
@@ -140,7 +141,7 @@
   font-weight: 401;
   font-size: 1.25rem;
   line-height: 170%;
-  color: rgb(56, 61, 71);
+  color: white;
 }
 
 @media (width < 731px) {
@@ -299,7 +300,7 @@
 
 .post-single-content-info-container {
   position: sticky;
-  top: 1rem;
+  top: 5rem;
 }
 
 .post-single-author-info {
@@ -333,7 +334,7 @@
   font-size: 18px;
   line-height: 180%;
   font-weight: 401;
-  color: black;
+  color: white;
 }
 
 @media (width < 1120px) {
@@ -386,6 +387,7 @@
 
 .post-single-share-value a {
   color: black;
+  color: white;
 }
 
 .latest-post-header-container {
@@ -622,9 +624,10 @@
   font-weight: 600;
 }
 
-.blog-content-author span {
+.blog-content-author span a{
   font-weight: 400;
   text-decoration: underline;
+  color: white;
 }
 
 .blog-content-read-time {

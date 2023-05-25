@@ -2,20 +2,29 @@
 /* Default styling for header*/
 .header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
   align-items: center;
-  height: 75px;
-  background-color: #d3d3d3;
-  background-image: linear-gradient(50deg, rgb(204, 157, 101), rgb(251, 206, 135));
-  font-family: Satoshi, Cinzel, sans-serif; 
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transition: all 0.5s;
+}
+
+.header-scrolled {
+  background-color: black;
 }
 
 .header-logo{
- margin-left: 30px;
- flex: 1;
- max-width: 170px;
- min-width: 130px;
+ max-width: 300px;
+ transition: all 0.5s;
+}
+
+.header-logo-scrolled {
+  max-width: 200px;
 }
 
 .website-logo {
@@ -23,13 +32,13 @@
 }
 
 .page-link {
-  width: 600px;
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
   align-items: center;
-  margin-right: 30px;
+  gap: 15px;
 }
 
 @media ( width < 912px ) {
@@ -38,22 +47,22 @@
  } 
 }
 
-.link,
-.contact-button {
+.link {
   flex: 1;
   flex-shrink: 0;
   color: rgb(56, 61, 71);
-  font-size: 14px;
+  font-size: 18px;
+  color: white;
   text-transform: uppercase;
+  transition: all 0.5s;
 }
 
-.link {
-  transition: text-decoration 0.20s,
-              color 0.20s;
+.page-link-scrolled a p {
+  font-size: 16px;
 }
 
 .link:hover {
-  color: white;
+  color: #d8d8d8;
   text-decoration: underline;
 }
 
@@ -69,5 +78,4 @@
   background-color: white;
   color: black;
 }
-
 

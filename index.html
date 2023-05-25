@@ -19,13 +19,13 @@
   <!-- End Stylesheets-->
   <!-- Scripts-->
   <script src="js/misc.js" defer></script>
+  <script src="js/header.js" defer></script>
   <!-- End Scripts-->
   <!-- Import Fonts-->
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-  <link href="https://api.fontshare.com/v2/css?f[]=zodiak@901,700,800,401,301,400,101,801,701,900,300,100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
   <!-- End Imports-->
   <!-- CDNs-->
   <link
@@ -34,52 +34,61 @@
   />
   <!--End CDNs-->
   <!-- Script CDNs-->
-  <script src="https://kit.fontawesome.com/8fb8a7e9fa.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8fb8a7e9fa.js" crossorigin="anonymous" defer></script>
   <!-- End Script CDNs-->
 </head>
-<!-- Web Header -->
-<header class="header">
-  <!-- Main Logo-->
-  <div class="header-logo">
-    <a href="index.html">
-      <img class="website-logo" src="assets/svg/MG White Horizontal.svg" alt="Millennium Group">
-    </a>
-  </div>
-  <!--Links Desktop View-->
-  <div class="page-link">
-      <a href="">
-        <p class="link">Our Subsidiaries</p>
-      </a>
-      <a href="">
-        <p class="link">About Us</p>
-      </a>
-      <a href="">
-        <p class="link">Initiatives</p>
-      </a>
-      <a href="">
-        <p class="link">Gallery</p>
-      </a>
-      <a href="blog.html">
-        <p class="link">News</p>
-      </a>
-    <div class="contact-us-desktop">
-      <a href="">
-        <p class="contact-button">
-          Get In Touch
-        </p>
-      </a>
-    </div>
-  </div>
-</header>
-<!-- End Header-->
 <body >
   <!-- Go to top button-->
   <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
   <!-- End Back to Top button--> 
+  <!-- Web Header -->
+  <header class="header">
+    <!-- Main Logo-->
+    <div class="header-logo">
+      <a href="index.html">
+        <img class="website-logo" src="assets/svg/Millenium-white.svg" alt="Millennium Group">
+      </a>
+    </div>
+    <!--Links Desktop View-->
+    <div class="page-link">
+        <div class="subsidary-mega-menu">
+          <a href="">
+            <p class="link">Our Subsidiaries</p>
+          </a>
+          <div class="mega-menu-content">
+            <div class="mega-row1">
+              <div class="mega-row-content1">
+
+              </div>
+            </div>
+            <div class="mega-row2">
+            </div>
+            <div class="mega-row3">
+            </div>
+          </div>
+        </div>
+        <a href="about.html">
+          <p class="link">About Us</p>
+        </a>
+        <a href="gallery.html">
+          <p class="link">Gallery</p>
+        </a>
+        <a href="blog.html">
+          <p class="link">News</p>
+        </a>
+        <a href="contact.html">
+          <p class="link">Contact</p>
+        </a>
+    </div>
+  </header>
+  <!-- End Header-->
   <!-- Body Start -->
   <main>
     <!-- Hero Section -->
     <div class="hero-container">
+      <video autoplay loop muted poster="assets/images/hero.jpg" id="background">
+        <source src="assets/videos/millennium.mp4" type="video/mp4" preload="auto">
+     </video>
       <div class="hero-text  animate__animated animate__fadeInUp animate__delay-1s">
         <p class="hero-heading">
           Millennium Group of Companies
@@ -108,9 +117,9 @@
             <span>Wealth Creation</span> - The people’s prosperity!
           </p>
           <p class="mini-about-description">
-            With subsidiaries firmly grounded in the mainstream sectors of the contemporary world economy, Millennium Group continuously and collectively work with businesses, organizations, and the society in general to ultimately achieve its paramount goal which is “the people’s prosperity.” 
+            Millennium Group of companies is a conglomerate that consists of a diverse range of subsidiary companies characterized by their extensive diversification across various industries such as, construction, finance, technology, travel & lifestyle, hospitality, real estate, agriculture, fashion, oil & gas, entertainment, etcetera. 
             <br>
-            With subsidiaries firmly grounded in the mainstream sectors of the contemporary world economy, Millennium Group continuously and collectively work with businesses
+            Our Values are the core principles, beliefs and ethics that propels our actions and decisions as an organization, and serves as the basis and framework of all our operations. These values represents our culture and identity of which we strive to uphold at any point in time. 
           </p>
            <div class="mini-about-learn-more">
           <a href="">
@@ -131,7 +140,7 @@
           <p class="mini-philosophy-description">    
             Millennium Group of Companies is a conglomerate exclusively focused on improving and simplifying people's lives in all standards by primarily providing and prioritizing long lasting solutions to problems confronting the various areas of human living.
             <br>
-            Millennium Group of Companies is a conglomerate exclusively focused on improving and simplifying people's lives in all standards by primarily providing and prioritizing long lasting solutions to problems confronting the various areas of human living.         
+            With subsidiaries firmly grounded in the mainstream sectors of the contemporary world economy, Millennium Group continuously and collectively work with businesses, organizations, and the society in general to ultimately achieve its paramount goal which is “the people’s prosperity.”        
           </p>
           <div class="mini-philosophy-learn-more">
             <a href="">
@@ -147,13 +156,13 @@
       </div>
     </div>
     <!-- End Mini About Us-->
-    <!-- Begin Features-->
+    <!-- Begin Features
     <div class="news-section-header">
       <p class="section-subtitle">
         Places we have been <span>Featured</span> 
       </p>
     </div>
-    <!-- End Features-->
+     End Features-->
     <!-- Begin Chairman's Message-->
     <div class="message-section">
       <div class="message-container">
@@ -191,6 +200,9 @@
             <p class="subisidary">
               Trade Solutions
             </p>
+            <div class="subsidary-view-button">
+              <p class="website-view-button"><a href="">View Website</p></a>
+            </div>
           </div>
           <div class="second-content">
             <p class="main-group">
@@ -199,6 +211,9 @@
             <p class="subisidary">
               Maestro Atelier
             </p>
+            <div class="subsidary-view-button">
+              <p class="website-view-button"><a href="">View Website</p></a>
+            </div>
           </div>
           <div class="third-content">
             <p class="main-group">
@@ -207,6 +222,9 @@
             <p class="subisidary">
               Concierge
             </p>
+            <div class="subsidary-view-button">
+              <p class="website-view-button"><a href="">View Website</p></a>
+            </div>
           </div>
           <div class="fourth-content">
             <p class="main-group">
@@ -215,6 +233,9 @@
             <p class="subisidary">
               Couture
             </p>
+            <div class="subsidary-view-button">
+              <p class="website-view-button"><a href="">View Website</p></a>
+            </div>
           </div>
           <div class="fifth-content">
             <p class="main-group">
@@ -223,6 +244,9 @@
             <p class="subisidary">
               Farms
             </p>
+            <div class="subsidary-view-button">
+              <p class="website-view-button"><a href="">View Website</p></a>
+            </div>
           </div>
           <div class="sixth-content">
             <p class="main-group">
@@ -231,6 +255,9 @@
             <p class="subisidary">
               Finance
             </p>
+            <div class="subsidary-view-button">
+              <p class="website-view-button"><a href="">View Website</p></a>
+            </div>
           </div>
           <div class="seventh-content">
             <p class="main-group">
@@ -239,6 +266,9 @@
             <p class="subisidary">
               Technology
             </p>
+            <div class="subsidary-view-button">
+              <p class="website-view-button"><a href="">View Website</p></a>
+            </div>
           </div>
           <div class="eigth-content">
             <p class="main-group">
@@ -247,6 +277,9 @@
             <p class="subisidary">
               Entertainment
             </p>
+            <div class="subsidary-view-button">
+              <p class="website-view-button"><a href="">View Website</p></a>
+            </div>
           </div>
           <div class="ninth-content">
             <p class="main-group">
@@ -255,6 +288,9 @@
             <p class="subisidary">
               Real Estate
             </p>
+            <div class="subsidary-view-button">
+              <p class="website-view-button"><a href="">View Website</p></a>
+            </div>
           </div>
         </div>
       </div>
@@ -371,7 +407,7 @@
           <div class="first-footer-section">
             <div class="footer-company-logo">
               <a href="">
-                <img src="assets/svg/MG White Horizontal.svg" alt="" class="footer-logo">
+                <img src="assets/svg/Millenium-white.svg" alt="" class="footer-logo">
               </a>
             </div>
             <div class="footer-company-phone">

@@ -1,8 +1,8 @@
 /*Begin Styling for Hero Section*/
 .hero-container {
-  height: 607px;
-  background: url("../assets/images/ezgif.com-gif-maker1.webp") no-repeat center;
+  height: 700px;
   background-attachment: fixed;
+  background: url("../assets/images/hero.jpg") center no-repeat cover;
   background-size: cover;
   position: relative;
 }
@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 150px;
+  top: 250px;
   left: 50px;
 }
 
@@ -36,12 +36,29 @@
   }
 }
 
+#background {
+  width: 100%;
+  min-height: 700px;
+  right: -100%;
+  bottom: -100%;
+  top: -100%;
+  left: -100%;
+  object-fit: cover;
+  background-color: black;
+  filter: brightness(0.6);
+}
+
+@media (width < 720px) {
+  #background {
+    min-height: 500px;
+  }
+}
+
 
 .hero-heading {
   flex: 1;
   color: white;
-  font-family: Zodiak, sans-serif;
-  font-size: 80px;
+  font-size: 78px;
   font-weight: 700;
 }
 
@@ -66,8 +83,7 @@
 .hero-description {
   flex: 1;
   color: white;
-  font-family: Satoshi, sans-serif;
-  font-size: 32px;
+  font-size: 29px;
   margin-bottom: 26px;
 }
 
@@ -92,8 +108,7 @@
 
 .hero-learn-more {
   color: white;
-  font-family: Satoshi, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   background-color: rgb(204, 157, 101);
   width: 100px;
   padding: 8px 13px;
@@ -126,7 +141,7 @@
 .mini-about-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 8rem;
+  column-gap: 6rem;
   padding-top: 150px;
   padding-left: 50px;
   padding-right: 50px;
@@ -190,12 +205,11 @@
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: rgb(56, 61, 71);
+  color: white;
   margin-bottom: 10px;
 }
 
 .mini-about-heading {
-  font-family: Zodiak, sans-serif;
   font-size: 48px;
   line-height: 120%;
   font-weight: 501;
@@ -227,10 +241,9 @@
 }
 
 .mini-about-description {
-  font-family: Satoshi, sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: rgb(56, 61, 71);
+  color: white;
   line-height: 170%;
   letter-spacing: 0.5px;
 }
@@ -257,7 +270,6 @@
 
 .mini-about-learn-more a {
   color: white;
-  font-family: Satoshi, sans-serif;
   font-size: 20px;
   background-color: rgb(56, 61, 71);
   width: 100px;
@@ -270,8 +282,8 @@
 
 .mini-about-learn-more a:hover {
   background-color: transparent;
-  border: 1px solid rgb(56, 61, 71);
-  color: rgb(56, 61, 71);
+  border: 1px solid rgb(204, 157, 101);
+  color: rgb(204, 157, 101);
 }
 
 .mini-philosophy-wrapper {
@@ -301,8 +313,7 @@
 }
 
 .mini-philosophy-heading {
-  font-family: Zodiak, sans-serif;
-  font-size: 48px;
+  font-size: 44px;
   line-height: 120%;
   font-weight: 501;
   color: rgb(204, 157, 101);
@@ -321,10 +332,9 @@
 }
 
 .mini-philosophy-description {
-  font-family: Satoshi, sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: rgb(56, 61, 71);
+  color: white;
   line-height: 170%;
   letter-spacing: 0.5px;
 }
@@ -351,7 +361,6 @@
 
 .mini-philosophy-learn-more a{
   color: white;
-  font-family: Satoshi, sans-serif;
   font-size: 20px;
   background-color: rgb(56, 61, 71);
   width: 100px;
@@ -364,8 +373,8 @@
 
 .mini-philosophy-learn-more a:hover {
   background-color: transparent;
-  border: 1px solid rgb(56, 61, 71);
-  color: rgb(56, 61, 71);
+  border: 1px solid rgb(204, 157, 101);
+  color: rgb(204, 157, 101);
 }
 
 
@@ -457,7 +466,6 @@
 
 .message-heading {
   font-size: 48px;
-  font-family: Zodiak, sans-serif;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -476,7 +484,6 @@
 
 .main-message {
   font-size: 24px;
-  font-family: Satoshi, sans-serif;
   margin-bottom: 30px;
 }
 
@@ -496,7 +503,6 @@
 .message-author {
   text-align: right;
   font-size: 18px;
-  font-family: Zodiak, sans-serif;
 }
 
 @media (width < 731px) {
@@ -509,8 +515,7 @@
 .subsidaries-section {
   margin-top: 150px;
   margin-bottom: 100px;
-  font-family: Zodiak, sans-serif;
-  color: rgb(56, 61, 71);
+  color: white;
 }
 
 @media (width < 731px) {
@@ -574,6 +579,26 @@
   font-style: italic;
 }
 
+.website-view-button {
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: all 0.4s;
+}
+
+.website-view-button a {
+  color: white;
+}
+
+.website-view-button:hover {
+  background-color: rgb(204, 157, 101);
+  color: rgb(56, 61, 71);
+  border-color: rgb(204, 157, 101);
+}
+
 .subsidaries-infographic {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -581,9 +606,10 @@
   height: 500px;
   padding-left: 60px;
   padding-right: 20px;
-  font-family: Zodiak, sans-serif;
   overflow-x: scroll;
   scrollbar-width: none;
+  -webkit-scrollbar-width: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 @media (width < 731px) {
@@ -620,7 +646,6 @@
 
 .main-group {
   color: white;
-  font-family: Zodiak, sans-serif;
   font-size: 28px;
   font-style: italic;
   font-weight: 401;
@@ -634,7 +659,6 @@
 
 .subisidary {
   color: white;
-  font-family: Zodiak, sans-serif;
   font-size: 28px;
   font-weight: 501;
 }
@@ -762,20 +786,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Zodiak, sans-serif;
-  color: rgb(56, 61, 71);
+  color: white;
   margin-bottom: 3%;
 }
 
 .section-name {
-  font-family: Satoshi, sans-serif;
   font-size: 1em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .section-subtitle {
-  font-family: Zodiak, sans-serif;
   font-size: 3em;
   font-style: italic;
   font-weight: 401;
@@ -865,7 +886,6 @@
 }
 
 .news-section-content-item-textbox {
-  font-family: Satoshi, sans-serif;
   padding: 0 1.5rem;
 }
 
@@ -873,21 +893,20 @@
   display: inline-block;
   font-size: 12px;
   padding: 4px 8px;
-  background-color: white;
-  border: 1px solid rgb(56, 61, 71);
-  color: rgb(56, 61, 71);
+  background-color: transparent;
+  border: 1px solid rgb(204, 157, 101);
+  color: white;
   text-transform: uppercase;
   transition: background-color 0.20s,
               color 0.20s;
 }
 
 .news-section-content-item-category-text:hover {
-  background-color: rgb(56, 61, 71);
+  background-color: rgb(204, 157, 101);
   color: white;
 }
 
 .news-section-content-item-heading {
-  font-family: Zodiak, sans-serif;
   font-size: 1.5rem;
   line-height: 130%;
   font-weight: 501;
@@ -903,6 +922,7 @@
 .news-section-content-item-text {
   overflow: hidden;
   text-overflow: ellipsis;
+  color: white;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -919,7 +939,6 @@
   margin-bottom: 100px;
   background-color: rgb(56, 61, 71);
   color: #fff;
-  font-family: Satoshi, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   padding: 16px 20px;
@@ -953,7 +972,6 @@
   align-items: center;
   justify-content: center;
   color: white;
-  font-family: Zodiak, sans-serif;
   font-size: 48px;
 }
 
@@ -1007,7 +1025,6 @@
 
 .gallery-cta-text a {
   font-size: 18px;
-  font-family: Satoshi, sans-serif;
 }
 
 @media (width < 731px) {
@@ -1063,7 +1080,6 @@
 
 .email-subscription-box h2 {
   margin: 0 0;
-  font-family: Zodiak, sans-serif;
   font-weight: 501;
   font-size: 3rem;
   line-height: 120%;
@@ -1144,7 +1160,6 @@
   border-style: solid;
   border-color: rgba(56, 61, 71, .5);
   background-color: white;
-  font-family: Zodiak, sans-serif;
   color: #082220;;
   font-style: italic;
   font-size: 16px;
@@ -1165,7 +1180,6 @@
 .newsletter-submit {
   border: 1px solid rgb(56, 61, 71);
   color: #f2f6eb;
-  font-family: Satoshi, sans-serif;
   font-size: 13px;
   letter-spacing: 1px;
   line-height: 110%;
