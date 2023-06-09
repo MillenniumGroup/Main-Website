@@ -40,6 +40,12 @@
   max-width: 200px;
 }
 
+@media screen and (min-width: 912px) {
+  .header-logo-scrolled {
+    max-width: 130px;
+  }
+}
+
 .website-logo {
   width: 100%;
 }
