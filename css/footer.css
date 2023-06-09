@@ -1,6 +1,7 @@
 
 /*Begin footer section styling*/
 .footer-section {
+  background-image: -o-linear-gradient(40deg, rgb(204, 157, 101), rgb(251, 206, 135));
   background-image: linear-gradient(50deg, rgb(204, 157, 101), rgb(251, 206, 135));
   padding: 100px 50px;
 }
@@ -15,22 +16,33 @@
   display: grid;
   grid-template-columns: 0.4fr 1fr;
   -moz-column-gap: 6rem;
-       column-gap: 6rem;
+       -webkit-column-gap: 6rem;
+          column-gap: 6rem;
 }
 
 @media (width < 991px) {
   .footer-container {
     grid-template-columns: 1fr;
     -moz-column-gap: 10rem;
-         column-gap: 10rem;
+         -webkit-column-gap: 10rem;
+            column-gap: 10rem;
   }
 }
 
 .first-footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (width < 991px) {
@@ -90,7 +102,8 @@
   display: grid;  
   grid-template-columns: 1fr 1fr 1fr;
   -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+       -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
   padding-left: 100px;
 }
 
@@ -116,9 +129,16 @@
 }
 
 .subsidaries-link-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 1.3rem;
   font-size: 1rem;
   line-height: 150%;
@@ -137,6 +157,8 @@
   color: white;
   font-style: italic;
   transition: -webkit-text-decoration 0.70s;
+  -webkit-transition: -webkit-text-decoration 0.70s;
+  -o-transition: text-decoration 0.70s;
   transition: text-decoration 0.70s;
   transition: text-decoration 0.70s, -webkit-text-decoration 0.70s;
 }
@@ -163,6 +185,12 @@
   font-weight: 401;
   letter-spacing: 1px;
   text-decoration: none;
+  -webkit-transition: background-color 0.20s,
+              border 0.20s,
+              color 0.20s;
+  -o-transition: background-color 0.20s,
+              border 0.20s,
+              color 0.20s;
   transition: background-color 0.20s,
               border 0.20s,
               color 0.20s;
