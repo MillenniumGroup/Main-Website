@@ -64,7 +64,7 @@
   gap: 15px;
 }
 
-@media ( width < 912px ) {
+@media screen and (max-width: 912px ) {
   .page-link {
     display: none;
  } 

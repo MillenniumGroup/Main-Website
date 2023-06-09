@@ -10,7 +10,7 @@
           justify-content: start;
 }
 
-@media (width < 850px) {
+@media screen and (max-width: 850px) {
   .contact-section {
     grid-template-columns: 1fr;
     margin: 100px 0;
@@ -27,7 +27,7 @@
      object-position: left;
 }
 
-@media (width < 850px) {
+@media screen and (max-width: 850px) {
   .contact-image img {
     max-height: 400px;
     -o-object-position: center;
@@ -59,7 +59,7 @@
   font-style: italic;
 }
 
-@media (width < 850px) {
+@media screen and (max-width: 850px) {
   .contact-form-section h2 {
     font-size: 3rem;
   }
@@ -75,7 +75,7 @@
   font-weight: 400;
 }
 
-@media (width < 850px) {
+@media screen and (max-width: 850px) {
   .contact-form-section p {
     font-size: 16px;
   }
