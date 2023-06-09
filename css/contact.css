@@ -3,8 +3,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 50px;
-       column-gap: 50px;
-  justify-content: start;
+       -webkit-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 @media (width < 850px) {
@@ -34,9 +37,16 @@
 
 .contact-form-section {
   padding: 0 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   gap: 30px;
 }
 
@@ -72,8 +82,13 @@
 }
 
 .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 30px;
 }
 
