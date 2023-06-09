@@ -20,13 +20,14 @@ body {
   color: white;
 }
 
-main {
+section {
   overflow-x: hidden;
 }
 
 img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {

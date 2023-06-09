@@ -14,13 +14,15 @@
 .footer-container {
   display: grid;
   grid-template-columns: 0.4fr 1fr;
-  column-gap: 6rem;
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
 }
 
 @media (width < 991px) {
   .footer-container {
     grid-template-columns: 1fr;
-    column-gap: 10rem;
+    -moz-column-gap: 10rem;
+         column-gap: 10rem;
   }
 }
 
@@ -87,7 +89,8 @@
 .second-footer-section {
   display: grid;  
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   padding-left: 100px;
 }
 
@@ -133,7 +136,9 @@
 .subsidaries-link {
   color: white;
   font-style: italic;
+  transition: -webkit-text-decoration 0.70s;
   transition: text-decoration 0.70s;
+  transition: text-decoration 0.70s, -webkit-text-decoration 0.70s;
 }
 
 .subsidaries-link:hover {

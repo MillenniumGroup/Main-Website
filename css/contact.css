@@ -2,7 +2,8 @@
   margin: 170px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   justify-content: start;
 }
 
@@ -17,14 +18,17 @@
 .contact-image img {
   width: 100%;
   max-height: 600px;
-  object-fit: cover;
-  object-position: left;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 
 @media (width < 850px) {
   .contact-image img {
     max-height: 400px;
-    object-position: center;
+    -o-object-position: center;
+       object-position: center;
   }  
 }
 
@@ -91,6 +95,22 @@
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 110%;
+}
+
+.input-field::-webkit-input-placeholder {
+  color: azure;
+}
+
+.input-field::-moz-placeholder {
+  color: azure;
+}
+
+.input-field:-ms-input-placeholder {
+  color: azure;
+}
+
+.input-field::-ms-input-placeholder {
+  color: azure;
 }
 
 .input-field::placeholder {
