@@ -21,7 +21,7 @@
   width: 100%;
 }
 
-@media (max-width < 800px) {
+@media screen and (max-width: 800px) {
   .column {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
@@ -30,7 +30,7 @@
   }
 }
 
-@media (max-width < 600px) {
+@media screen and (max-width: 600px) {
   .column {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;

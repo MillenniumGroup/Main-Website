@@ -6,7 +6,7 @@
   padding: 100px 50px;
 }
 
-@media (width < 731px) {
+@media screen and (max-width: 731px) {
   .footer-section {
     padding: 100px 30px;
   }
@@ -20,7 +20,7 @@
           column-gap: 6rem;
 }
 
-@media (width < 991px) {
+@media screen and (max-width: 991px) {
   .footer-container {
     grid-template-columns: 1fr;
     -moz-column-gap: 10rem;
@@ -45,7 +45,7 @@
           justify-content: space-between;
 }
 
-@media (width < 991px) {
+@media screen and (max-width: 991px) {
   .first-footer-content {
     width: 250px;
   }
@@ -54,13 +54,13 @@
 .footer-company-logo {
   margin-bottom: 3rem;
 }
-@media (width < 991px) {
+@media screen and (max-width: 991px) {
   .footer-company-logo {
     width: 400px;    
   }
 }
 
-@media (width < 731px) {
+@media screen and (max-width: 731px) {
   .footer-company-logo {
     width: 250px;
   }
@@ -69,7 +69,7 @@
 .footer-company-phone {
   margin-bottom: 3rem;
 }
-@media (width < 991px) {
+@media screen and (max-width: 991px) {
   .first-phone,
   .second-phone,
   .footer-company-email a p {
@@ -86,7 +86,7 @@
   letter-spacing: 0.5px;
 }
 
-@media (width < 991px) {
+@media screen and (max-width: 991px) {
   .footer-company-phone,
   .footer-company-email {
     display: initial;
@@ -107,14 +107,14 @@
   padding-left: 100px;
 }
 
-@media (width < 991px) {
+@media screen and (max-width: 991px) {
   .second-footer-section {
     padding-left: 0;
     padding-top: 30px;
   }
 }
 
-@media (width < 550px) {
+@media screen and (max-width: 550px) {
   .second-footer-section {
     grid-template-columns: 1fr 1fr;
   }
@@ -146,7 +146,7 @@
   letter-spacing: .5px;
 }
 
-@media (width < 550px) {
+@media screen and (max-width: 550px) {
   .subsidaries-link-list:nth-child(3) {
     grid-row-start: 1;
     grid-column-start: 1;    
@@ -196,14 +196,14 @@
               color 0.20s;
 }
 
-@media (width < 731px) {
+@media screen and (max-width: 731px) {
   .subsidaries-view-button {
     font-size: 14px;
     padding: .5rem;
   }
 }
 
-@media (width < 500px) {
+@media screen and (max-width: 500px) {
   .subsidaries-view-button {
     font-size: 12px;
   }
@@ -224,7 +224,7 @@
   text-align: right;
 }
 
-@media (width < 500px) {
+@media screen and (max-width: 500px) {
   .copyright-text {
     font-size: 14px;
   }
