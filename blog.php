@@ -1,0 +1,368 @@
+<?php
+include "admin/connection.php";
+$blog_query=mysqli_query($link,"SELECT * from blog order by id DESC");
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Millennium Group</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- End Favicon-->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- End Stylesheets-->
+    <!-- Scripts-->
+    <script src="js/misc.js" defer></script>
+    <script src="js/header.js" defer></script>
+    <!-- End Scripts-->
+    <!-- Import Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap" rel="stylesheet">
+    <!-- End Imports-->
+    <!-- CDNs-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--End CDNs-->
+    <!-- Script CDNs-->
+    <script src="https://kit.fontawesome.com/8fb8a7e9fa.js" crossorigin="anonymous"></script>
+    <!-- End Script CDNs-->
+  </head>
+  <body>
+    <!-- Go to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+    <!-- End Back to Top button-->
+    <!-- Web Header -->
+    <header class="header">
+      <!-- Main Logo-->
+      <div class="header-logo">
+        <a href="index.html">
+          <img class="website-logo" src="assets/svg/Millenium-white.svg" alt="Millennium Group">
+        </a>
+      </div>
+      <!--Links Desktop View-->
+      <div class="page-link">
+          <a href="">
+            <p class="link">Our Subsidiaries</p>
+          </a>
+          <a href="about.html">
+            <p class="link">About Us</p>
+          </a>
+          <a href="gallery.html">
+            <p class="link">Gallery</p>
+          </a>
+          <a href="blog.html">
+            <p class="link">News</p>
+          </a>
+          <a href="contact.html">
+            <p class="link">Contact</p>
+          </a>
+      </div>
+    </header>
+    <!-- End Header--> 
+    <!--  Blog Hero Section-->
+    <div class="hero-section1">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>NEWS & EVENTS</h1>
+          <p>View our latests News & Events</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Hero-->
+ 
+  <!-- Begin News Content-->
+    <!-- Begin Blog Content-->
+    <div class="blog-section">
+      <div class="blog-content-container">
+        <?php
+        while ($blog = mysqli_fetch_array($blog_query)) {
+        ?>
+        <div class="blog-content">
+          <div class="blog-content-image">
+            <a href="news-content.html">
+              <img src="admin/assets/images/blog/<?= $blog['image']; ?>" alt="Blog-content-image">
+            </a>
+          </div>
+          <div class="blog-content-text">
+            <div class="blog-content-text-header">
+              <?= $blog['title'] ?>
+            </div>
+            <div class="blog-content-text-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam quae error aperiam voluptas tempora architecto earum ipsam! Illo perferendis iure temporibus totam consectetur eaque, quae dicta quod magnam. Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellat, saepe velit recusandae.
+            </div>
+            <div class="blog-goto-content">
+              <a href="">
+                Read More
+              </a>
+            </div>
+            <footer class="blog-content-footer">
+              <div class="blog-info-footer">
+                <div class="blog-content-author">
+                  Author 
+                  <span>
+                    <a href="">
+                      <?= $blog['category']; ?>
+                    </a>
+                  </span>
+                </div>
+                <div class="blog-content-read-time">
+                  Date
+                  <span>
+                    Oct 25, 2023
+                  </span>
+                </div>
+                <div class="blog-content-read-time">
+                  Read 
+                  <span>
+                    10 Min
+                  </span>
+                </div>
+              </div>
+              <div class="news-category-word">
+                <a href="">
+                  <div class="news-category-text">
+                    <?= $blog['tag']; ?>
+                  </div>
+                </a>
+              </div>  
+            </footer>
+          </div>
+        </div>
+        <?php 
+        }
+        ?>
+      </div>
+      <div class="blog-content-sidebar">
+        <div class="blog-sidebar-content">
+          <div class="sidebar-category-content">
+            <h2 class="sidebar-category-header">
+              Pick a category
+            </h2>
+            <div class="sidebar-category-links">
+              <div class="sidebar-category">
+                Business
+              </div>
+              <div class="sidebar-category">
+                Art
+              </div>
+              <div class="sidebar-category">
+                Couture
+              </div>
+              <div class="sidebar-category">
+                Real Estate
+              </div>
+              <div class="sidebar-category">
+                Photography
+              </div>
+              <div class="sidebar-category">
+                Concierge
+              </div>
+              <div class="sidebar-category">
+                Events
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-popular-posts">
+            <h4 class="sidebar-popular-posts-header">Popular Posts</h4>
+            <div class="popular-container">
+              <h3 class="sidebar-popular-header">01</h3>
+              <div class="sidebar-popular-details">
+                <a href="">
+                  <h3 class="popular-post-header">
+                    Money Making Machine
+                  </h3>
+                </a>
+                <p class="popular-post-author">
+                  Author <a href=""><span>Millennium Technology</span></a>
+                </p>
+              </div>
+            </div>
+            <div class="popular-container">
+              <h3 class="sidebar-popular-header">02</h3>
+              <div class="sidebar-popular-details">
+                <a href="">
+                  <h3 class="popular-post-header">
+                    Money Making Machine
+                  </h3>
+                </a>
+                <p class="popular-post-author">
+                  Author <a href=""><span>Millennium Technology</span></a>
+                </p>
+              </div>
+            </div>
+            <div class="popular-container">
+              <h3 class="sidebar-popular-header">03</h3>
+              <div class="sidebar-popular-details">
+                <a href="">
+                  <h3 class="popular-post-header">
+                    Money Making Machine
+                  </h3>
+                </a>
+                <p class="popular-post-author">
+                  Author <a href=""><span>Millennium Technology</span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Begin Pagination for blog-->
+    <div class="blog-content-pagination">
+      <!-- Previous Pagination-->
+      <a href="">
+        <div class="previous-pagination">
+          <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z"></path>
+          </svg>
+          <p>Previous</p>
+        </div>
+      </a>
+      <!-- Next Pagination-->
+      <a href="">
+        <div class="next-pagination">
+          <p>Next</p>
+          <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+            <path fill="none" d="M0 0h24v24H0z">
+            </path>
+            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+            </path>
+          </svg>
+        </div>
+      </a>
+    </div>
+    <!-- End Pagination for blog-->
+    <!-- Begin Email Subsrciption Form-->
+    <div class="email-section">
+      <div class="email-subscription-box">
+        <h2>
+          <span>Sign Up</span> for Exclusive Access
+        </h2>
+        <div class="newsletter-form">
+          <form action="" method="" class="newsletter-form-fill">
+            <input type="email" placeholder="Your email address" class="newsletter-email" name="email" maxlength="256"/>
+            <input type="submit" value="Subscribe" class="newsletter-submit" name="submit" data-text
+            ="Please wait...">
+          </form>
+        </div>
+      </div>
+    </div>
+  <!-- End Email Subsrciption Form-->
+    <!-- End email subscription form-->
+  </body>
+  <!-- Begin Footer-->
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="first-footer-section">
+        <div class="footer-company-logo">
+          <a href="">
+            <img src="assets/svg/Millenium-white.svg" alt="" class="footer-logo">
+          </a>
+        </div>
+        <div class="footer-company-phone">
+          <a href="tel:+2347067896789">
+            <p class="first-phone">
+              +234 70 6789 6789
+            </p>
+          </a>
+          <a href="tel:+2347067896789">
+            <p class="second-phone">
+              +234 70 6789 6789
+            </p>
+          </a>
+        </div>
+        <div class="footer-company-email">
+          <a href="mailto:info@millenniumgroup.ng">
+            <p>
+              info@millenniumgroup.ng
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="second-footer-section">
+        <div class="subsidaries-link-list">
+          <div class="subsidaries-link-heading">
+            <h2>Businesses</h2>
+          </div>
+          <div class="subsidaries-link-list-item">
+            <a href="" class="subsidaries-link">
+              <p>Trade Solutions</p>
+            </a>
+            <a href="" class="subsidaries-link">
+              <p>Maestro Atelier</p>
+            </a>
+            <a href="" class="subsidaries-link">
+              <p>Concierge</p>
+            </a>
+            <a href="" class="subsidaries-link">
+              <p>Finance</p>
+            </a>
+            <a href="" class="view-button">
+              <p class="subsidaries-view-button">all subsidaries</p>
+            </a>
+          </div>
+        </div>
+        <div class="subsidaries-link-list">
+          <div class="subsidaries-link-heading">
+            <h2>Company</h2>
+          </div>
+          <div class="subsidaries-link-list-item">
+            <a href="" class="subsidaries-link">
+              <p>Home</p>
+            </a>
+            <a href="" class="subsidaries-link">
+              <p>About Us</p>
+            </a>
+            <a href="" class="subsidaries-link">
+              <p>Gallery</p>
+            </a>
+            <a href="" class="subsidaries-link">
+              <p>Initiatives</p>
+            </a>
+            <a href="" class="subsidaries-link">
+              <p>News</p>
+            </a>
+          </div>
+        </div>   
+        <div class="subsidaries-link-list">
+          <div class="subsidaries-link-heading">
+            <h2>Social</h2>
+          </div>
+          <div class="subsidaries-link-list-item">
+            <a href="" class="subsidaries-link">
+              <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+            <a href="" class="subsidaries-link">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a href="" class="subsidaries-link">
+              <i class="fa-brands fa-twitter fa-xl"></i>
+            </a>
+            <a href="" class="subsidaries-link">
+              <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-text">
+      &copy;2023 <a href="">Millennium Group</a>. All Rights Reserved.
+    </div>
+  </footer>
+  <!-- End Footer-->
+</html>
