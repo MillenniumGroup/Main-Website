@@ -43,12 +43,6 @@
   }
 }
 
-@media screen and (max-width: 720px) {
-  .header-logo {
-    max-width: 200px;
-  }
-}
-
 .header-logo-scrolled {
   max-width: 200px;
 }
