@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 720px) {
   .header-logo {
-    max-width: 150px;
+    max-width: 200px;
   }
 }
 
@@ -60,7 +60,7 @@
 }
 
 .website-logo {
-  width: 90%;
+  width: 100%;
 }
 
 .page-link {
