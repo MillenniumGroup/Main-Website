@@ -1,0 +1,128 @@
+/* Styling for header block*/
+/* Default styling for header*/
+.header1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header1-scrolled {
+  background-color: black;
+}
+
+.header1-logo {
+ max-width: 300px;
+ -webkit-transition: all 0.5s;
+ -o-transition: all 0.5s;
+ transition: all 0.5s;
+ z-index: 1000;
+}
+
+@media screen and (max-width: 912px) {
+  .header1-logo {
+    max-width: 200px;
+  }
+}
+
+.header1-logo-scrolled {
+  max-width: 200px;
+}
+
+@media screen and (max-width: 720px) {
+  .header-logo-scrolled,
+  .header1-logo-scrolled {
+    max-width: 170px;
+  }
+}
+
+.website1-logo {
+  width: 100%;
+}
+
+.page1-link {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+@media screen and (max-width: 912px ) {
+  .page-link {
+    display: none;
+ } 
+}
+
+.link1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  color: rgb(56, 61, 71);
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.page-link-scrolled a p {
+  font-size: 16px;
+}
+
+
+.link1:hover {
+  color: #d8d8d8;
+  text-decoration: underline;
+}
+
+.contact-button {
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
+  -webkit-transition: background-color 0.20s,
+              color 0.20s;
+  -o-transition: background-color 0.20s,
+              color 0.20s;
+  transition: background-color 0.20s,
+              color 0.20s;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: black;
+}
+
