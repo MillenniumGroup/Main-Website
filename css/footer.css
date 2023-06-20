@@ -1,7 +1,7 @@
 
 /*Begin footer section styling*/
 .footer-section {
-  background-image: -o-linear-gradient(40deg, rgb(204, 157, 101), rgb(251, 206, 135));
+  background-image: -o-linear-gradient(40deg, #cc9d65, rgb(251, 206, 135));
   background-image: linear-gradient(50deg, rgb(204, 157, 101), rgb(251, 206, 135));
   padding: 100px 50px;
 }
