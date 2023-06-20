@@ -1,0 +1,264 @@
+
+/*Begin footer section styling*/
+.footer1-section {
+  background-image: -o-linear-gradient(40deg, #cc9d65, rgb(251, 206, 135));
+  background-image: linear-gradient(50deg, rgb(204, 157, 101), rgb(251, 206, 135));
+  padding: 100px 50px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 731px) {
+  .footer1-section {
+    padding: 100px 30px;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.footer1-container {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  -moz-column-gap: 6rem;
+       -webkit-column-gap: 6rem;
+          column-gap: 6rem;
+          font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  .footer1-container {
+    grid-template-columns: 1fr;
+    -moz-column-gap: 10rem;
+         -webkit-column-gap: 10rem;
+            column-gap: 10rem;
+            font-family: "Open Sans", sans-serif;
+  }
+}
+
+.first1-footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+          font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  .first1-footer-content {
+    width: 250px;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.footer1-company-logo {
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 991px) {
+  .footer1-company-logo {
+    width: 400px;    
+  }
+}
+
+@media screen and (max-width: 731px) {
+  .footer1-company-logo {
+    width: 250px;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.footer1-company-phone {
+  margin-bottom: 3rem;
+  font-family: "Open Sans", sans-serif;
+}
+@media screen and (max-width: 991px) {
+  .first1-phone,
+  .second1-phone,
+  .footer1-company-email a p {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;  
+  }
+}
+
+.footer1-company-phone,
+.footer1-company-email {
+  display: inline-block;
+  font-weight: 401;
+  font-size: 1.5rem;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  .footer1-company-phone,
+  .footer1-company-email {
+    display: initial;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.footer1-company-phone a,
+.footer1-company-email a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.second1-footer-section {
+  display: grid;  
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 1.5rem;
+       -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  padding-left: 100px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  .second1-footer-section {
+    padding-left: 0;
+    padding-top: 30px;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .second1-footer-section {
+    grid-template-columns: 1fr 1fr;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.subsidaries1-link-heading h2 {
+  font-weight: 401;
+  font-size: 13px;
+  color: rgba(56, 61, 71, .7);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.subsidaries1-link-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.3rem;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 401;
+  letter-spacing: .5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 550px) {
+  .subsidaries1-link-list:nth-child(3) {
+    grid-row-start: 1;
+    grid-column-start: 1;  
+    font-family: "Open Sans", sans-serif;  
+  }
+}
+
+.subsidaries1-link {
+  color: white;
+  font-style: italic;
+  transition: -webkit-text-decoration 0.70s;
+  -webkit-transition: -webkit-text-decoration 0.70s;
+  -o-transition: text-decoration 0.70s;
+  transition: text-decoration 0.70s;
+  transition: text-decoration 0.70s, -webkit-text-decoration 0.70s;
+  font-family: "Open Sans", sans-serif;
+}
+
+.subsidaries1-link:hover {
+  text-decoration: underline;
+  font-family: "Open Sans", sans-serif;
+}
+
+.view1-button {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.view1-button:hover {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.subsidaries1-view-button {
+  background-color: rgb(56, 61, 71);
+  color: white;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(56, 61, 71);
+  font-weight: 401;
+  letter-spacing: 1px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.20s,
+              border 0.20s,
+              color 0.20s;
+  -o-transition: background-color 0.20s,
+              border 0.20s,
+              color 0.20s;
+  transition: background-color 0.20s,
+              border 0.20s,
+              color 0.20s;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 731px) {
+  .subsidaries1-view-button {
+    font-size: 14px;
+    padding: .5rem;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .subsidaries1-view-button {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.subsidaries1-view-button:hover {
+  border: 1px solid rgb(56, 61, 71);
+  background-color: transparent;
+  color: rgb(56, 61, 71);
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.copyright1-text {
+  margin-top: 150px;
+  color: white;
+  font-size: .8rem;
+  font-size: 18px;
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .copyright1-text {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.copyright1-text a {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
