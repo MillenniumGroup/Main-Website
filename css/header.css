@@ -1,6 +1,7 @@
 /* Styling for header block*/
 /* Default styling for header*/
-.header {
+.header,
+.header1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,11 +26,13 @@
   transition: all 0.5s;
 }
 
-.header-scrolled {
+.header-scrolled,
+.header1-scrolled {
   background-color: black;
 }
 
-.header-logo{
+.header-logo,
+.header1-logo {
  max-width: 300px;
  -webkit-transition: all 0.5s;
  -o-transition: all 0.5s;
@@ -38,26 +41,31 @@
 }
 
 @media screen and (max-width: 912px) {
-  .header-logo {
+  .header-logo,
+  .header1-logo {
     max-width: 200px;
   }
 }
 
-.header-logo-scrolled {
+.header-logo-scrolled,
+.header1-logo-scrolled {
   max-width: 200px;
 }
 
 @media screen and (max-width: 720px) {
-  .header-logo-scrolled {
+  .header-logo-scrolled,
+  .header1-logo-scrolled {
     max-width: 170px;
   }
 }
 
-.website-logo {
+.website-logo,
+.website1-logo {
   width: 100%;
 }
 
-.page-link {
+.page-link,
+.page1-link {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: -webkit-box;
@@ -83,7 +91,8 @@
  } 
 }
 
-.link {
+.link,
+.link1 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -102,7 +111,8 @@
   font-size: 16px;
 }
 
-.link:hover {
+.link:hover,
+.link1:hover {
   color: #d8d8d8;
   text-decoration: underline;
 }
