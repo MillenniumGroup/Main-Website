@@ -22,6 +22,12 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .hero-section {
+    margin: 0 10px;
+  }
+}
+
 .hero-image {
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/news/pexels-viktoria-alipatova-2130166.jpg");
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/images/news/pexels-viktoria-alipatova-2130166.jpg");
@@ -31,6 +37,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-image {
+    height: 400px;
+  }
 }
 
 .hero-text {
@@ -43,6 +55,12 @@
           transform: translate(-50%, -50%);
   color: white;
   font-size: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text {
+    font-size: 16px;
+  }
 }
 
 .hero-text-image {
@@ -439,7 +457,7 @@
   margin-bottom: 20px;
 }
 
-@media screen and (width  < 731px) {
+@media screen and (max-width: 731px) {
   .blog-content-text-header {
     font-size: 1.5rem;
   }
@@ -548,6 +566,7 @@
   font-size: .875rem;
   line-height: 170%;
   font-weight: 600;
+  color: rgb(204, 157, 101);
 }
 
 .blog-content-author span a {
@@ -561,11 +580,13 @@
   font-size: .875rem;
   line-height: 170%;
   font-weight: 600;
+  color: rgb(204, 157, 101);
 }
 
 .blog-content-date span,
 .blog-content-read-time span {
   font-weight: 400;
+  color: white;
 }
 
 .blog-content-sidebar {

@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 768px) {
   .back-to-news-section {
-    padding: 0 20px;
+    padding: 70px 20px 0px 20px;
   }
 }
 
@@ -572,7 +572,7 @@
 
 
 .blog-content {
-  border: 1px solid rgb(56, 61, 71);
+  border: 1px solid rgb(204, 157, 101);
   padding: 0 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,7 +584,7 @@
   gap: 50px;
   padding: 48px;
   font-family: Satoshi, sans-serif;
-  background-color: white;
+  background-color: transparent;
   margin-right: -1px;
   margin-bottom: -1px;
 }
@@ -701,7 +701,7 @@
   font-size: 16px;
   line-height: 180%;
   font-weight: 400;
-  color: rgb(56, 61, 71);
+  color: white;
   overflow: hidden;
   -o-text-overflow: clip;
      text-overflow: clip;
